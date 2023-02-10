@@ -20,7 +20,7 @@ jobs:
 
     - name: Behave Test
       run: 
-        chrome --version
+        chrome -version
         chromedriver --version
         HEADLESS=true behave
 
