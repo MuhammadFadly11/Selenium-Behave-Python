@@ -5,7 +5,7 @@ import os
 def before_scenario(context, scenario):
     options = Options()
     options.add_argument('disable-gpu')
-    if os.getenv('HEADLESS') == 'true'
+    if os.getenv('HEADLESS') == 'true':
         options.add_argument('headless')
 
     context.browser = webdriver.Chrome(options=options)

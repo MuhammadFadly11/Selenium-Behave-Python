@@ -1,6 +1,6 @@
 install virtual env = virtualenv namenenv
 
-activate env = nameenv/Scripts/activate
+activate env = source nameenv/Scripts/activate
 
 install package = pip install behave selenium
 
