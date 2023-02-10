@@ -1,0 +1,26 @@
+name: Selenium Behave Python
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@4
+      with:
+        python-version: 3.11.1
+
+    - name: Setup Chrome
+      uses: browser-action/setup-chrome@latest
+      with:
+        chrome-version: stable
+
+    - name: Pip Install
+      run : pip install -r requirements.txt
+
+    - name: Behave Test
+      run: 
+        chrome --version
+        chromedriver --version
+        HEADLESS=true behave
+

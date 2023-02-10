@@ -4,12 +4,19 @@ activate env = nameenv/Scripts/activate
 
 install package = pip install behave selenium
 
-Create Folder = Features
-                    - Steps
+Create Folder = Features (folder)
+                    - Steps (folder)
+                        - login_steps.py (file)
                     - environment.py (Create env before and after scenarios inside here)
                 Login.Features(File)
 
 
-Running behave with "Behave" on terminal and We can copy the result for creating the test case
+Running behave with "behave" on terminal and We can copy the result for creating the test case
 
+git init -> git remote -> git status -> git add -> git commit -> git push origin master
 
+create yaml file for CI with creating the folder - .github (folder)
+                                                        - workflows (folder)
+                                                           - main.yaml (file)
+
+create requirements.txt with "pip freeze > requirements.txt" for creating list package in this project
