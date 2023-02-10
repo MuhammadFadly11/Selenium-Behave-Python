@@ -11,7 +11,7 @@ jobs:
         python-version: 3.11.1
 
     - name: Setup Chrome
-      uses: browser-action/setup-chrome@latest
+      uses: browser-actions/setup-chrome@latest
       with:
         chrome-version: stable
 
