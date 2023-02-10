@@ -1,0 +1,15 @@
+install virtual env = virtualenv namenenv
+
+activate env = nameenv/Scripts/activate
+
+install package = pip install behave selenium
+
+Create Folder = Features
+                    - Steps
+                    - environment.py (Create env before and after scenarios inside here)
+                Login.Features(File)
+
+
+Running behave with "Behave" on terminal and We can copy the result for creating the test case
+
+
